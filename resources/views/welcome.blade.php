@@ -14,9 +14,11 @@
 
 <div class="mt-4"></div>
 
-<x-primary-button @click="$dispatch('open-modal', 'test-modal')">
-  Create New Post
-</x-primary-button>
+<div x-data>
+  <x-primary-button @click="$dispatch('open-modal', 'test-modal')">
+    Create New Post
+  </x-primary-button>
+</div>
 
 <x-modal name="test-modal">
   <div class="p-6">
@@ -24,11 +26,13 @@
       <p class="mt-2">This is a test modal content.</p>
       
       <div class="mt-6 flex justify-end">
-          <button type="button" 
-                  @click="$dispatch('close')"
-                  class="bg-gray-500 text-white px-4 py-2 rounded-md">
-              Close Modal
-          </button>
+          <x-secondary-button x-on:click="$dispatch('close')">
+              Cancel
+          </x-secondary-button>
+          
+          <x-primary-button class="ml-3">
+              Save
+          </x-primary-button>
       </div>
   </div>
 </x-modal>
