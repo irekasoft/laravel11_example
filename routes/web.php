@@ -12,14 +12,12 @@ Route::get('/', function () {
 Route::middleware(['auth', 'verified'])->group(function () {
 
   Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('app.dashboard');
   })->name('dashboard');
 
-  Route::get('/abc', function () {
-    return view('dashboard');
-  })->name('abc');
-
-
+  Route::get('/second', function () {
+    return view('app.second');
+  })->name('second');
 
 });
 
