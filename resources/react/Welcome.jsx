@@ -17,18 +17,39 @@ class Welcome extends React.Component {
 
   render() {
     return (
-      <div className="">
+      <div className="mt-4">
+
+        Salam....
+
+        <br/>
+        <div className="mt-0"></div>
+
         {this.state.message} - {this.props.message}
 
         <br/>
-        Awesome
 
         <br/>
 
         <button
+          className="bg-blue-500 text-white px-4 py-2 rounded"
           onClick={() => this.setState({ message: 'Clicked' })}>
           Click me
         </button>
+
+        <hr className="my-4"/>
+      
+        <br/>
+
+        Count: {this.state.count}
+        
+        <br/><br/>
+
+        <button
+          className="bg-blue-500 text-white px-4 py-2 rounded"
+          onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Increment
+        </button>
+        
       </div>
     );
   }
