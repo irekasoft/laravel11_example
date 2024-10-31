@@ -1,6 +1,6 @@
 ## Laravel 11 
 
-$ laravel new <project-name>
+$ laravel new project-name
 
 $ composer require laravel/ui
 
