@@ -1,12 +1,13 @@
-## Laravel 11 
+# Laravel 11 
 
 $ laravel new project-name
 
 $ composer require laravel/ui
 
-$ php artisan ui bootstrap --auth
-
 $ npm install && npm run build
+
+
+## Run the server: 
 
 $ php artisan serve
 

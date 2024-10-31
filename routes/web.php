@@ -9,14 +9,19 @@ Route::get('/', function () {
 
 });
 
-Route::get('/dashboard', function () {
-  
-  return view('dashboard');
+Route::middleware(['auth', 'verified'])->group(function () {
 
-})->middleware(['auth', 'verified'])->name('dashboard');
+  Route::get('/dashboard', function () {
+    return view('dashboard');
+  })->name('dashboard');
+
+  Route::get('/abc', function () {
+    return view('dashboard');
+  })->name('abc');
 
 
 
+});
 
 Route::middleware('auth')->group(function () {
 
@@ -25,7 +30,5 @@ Route::middleware('auth')->group(function () {
   Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
 });
-
-
 
 require __DIR__ . '/auth.php';
