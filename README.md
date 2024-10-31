@@ -1,14 +1,14 @@
 ## Laravel 11 
 
-- laravel new <project-name>
+$ laravel new <project-name>
 
-- composer require laravel/ui
+$ composer require laravel/ui
 
-- php artisan ui bootstrap --auth
+$ php artisan ui bootstrap --auth
 
-- npm install && npm run build
+$ npm install && npm run build
 
-- php artisan serve
+$ php artisan serve
 
 
 ## For Production: 
