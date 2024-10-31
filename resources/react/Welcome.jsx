@@ -3,6 +3,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
+// import { Button } from '@/Components/ui/button';
+
 class Welcome extends React.Component {
 
   constructor(props) {
@@ -15,7 +17,7 @@ class Welcome extends React.Component {
 
   render() {
     return (
-      <div className="text-3xl text-center font-bold">
+      <div className="">
         {this.state.message} - {this.props.message}
 
         <br/>
@@ -23,10 +25,10 @@ class Welcome extends React.Component {
 
         <br/>
 
-        <div className="bg-blue-500 cursor-pointer hover:bg-blue-700 text-black font-bold py-2 px-4 rounded"
+        <button
           onClick={() => this.setState({ message: 'Clicked' })}>
           Click me
-        </div>
+        </button>
       </div>
     );
   }
