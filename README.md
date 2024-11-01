@@ -44,7 +44,7 @@ In export default defineConfig({
 
 ## Support API : 
 
-$ php artisan install:api
+`php artisan install:api`
 
 ### Sanctum Middleware: 
 
@@ -64,4 +64,3 @@ $ php artisan install:api
 ## Gotcha: 
 
 [Sanctum Gotcha](gotcha.md)
-
