@@ -12,8 +12,8 @@
 @vite(['resources/react/Welcome.jsx'])
 
 {{-- React Component --}}
-<div id="Welcome2" data-message="123" data-data="DEFGE"></div>
-@vite(['resources/react/Welcome2.jsx'])
+{{-- <div id="Welcome2" data-message="123" data-data="DEFGE"></div>
+@vite(['resources/react/Welcome2.jsx']) --}}
 
 <!-- Button to trigger modal -->
 

@@ -30,3 +30,8 @@ In export default defineConfig({
                 'resources/react/Welcome2.jsx',
 
 ````
+
+
+## Support API : 
+
+$ php artisan install:api
