@@ -5,12 +5,12 @@ import { createRoot } from 'react-dom/client';
 
 // import { Button } from '@/Components/ui/button';
 
-class Welcome extends React.Component {
+class Welcome2 extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      message: 'Welcome with React',
+      message: 'Welcome with React 2',
       count: 0,
     };
   }
@@ -57,9 +57,9 @@ class Welcome extends React.Component {
 }
 
 
-const element = document.getElementById("Welcome");
+const element = document.getElementById("Welcome2");
 if (element) {
   const props = Object.assign({}, element.dataset);
   const root = createRoot(element);
-  root.render(<Welcome {...props} />);
+  root.render(<Welcome2 {...props} />);
 }

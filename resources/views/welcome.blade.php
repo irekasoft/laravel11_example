@@ -7,8 +7,13 @@
 
 <a href="/login">Login</a> | <a href="/register">Register</a>
 
-<div id="Welcome" data-message="123"></div>
+{{-- React Component --}}
+<div id="Welcome" data-message="123" data-data="ABC"></div>
 @vite(['resources/react/Welcome.jsx'])
+
+{{-- React Component --}}
+<div id="Welcome2" data-message="123" data-data="DEFGE"></div>
+@vite(['resources/react/Welcome2.jsx'])
 
 <!-- Button to trigger modal -->
 
