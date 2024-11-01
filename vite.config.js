@@ -11,8 +11,7 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/react/Welcome.jsx',
                 'resources/react/Welcome2.jsx',
-
-                
+                'resources/react/app/Dashboard.jsx',
             ],
             refresh: true,
         }),

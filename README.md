@@ -45,3 +45,23 @@ In export default defineConfig({
 ## Support API : 
 
 $ php artisan install:api
+
+### Sanctum Middleware: 
+
+`bootstrap/app.php` file:
+
+
+````
+->withMiddleware(function (Middleware $middleware) {
+    $middleware->statefulApi();
+})
+````
+
+
+`php artisan config:publish cors`
+
+
+## Gotcha: 
+
+[Sanctum Gotcha](gotcha.md)
+
