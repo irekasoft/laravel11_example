@@ -31,14 +31,12 @@ class Welcome extends React.Component {
         <br/>
 
         <button
-          className="bg-blue-500 text-white px-4 py-2 rounded"
+          className="bg-blue-900 text-white px-6 py-2 rounded"
           onClick={() => this.setState({ message: 'Clicked' })}>
           Click me
         </button>
 
-        <hr className="my-4"/>
-      
-        <br/>
+        <div className="mt-5"></div>
 
         Count: {this.state.count}
         

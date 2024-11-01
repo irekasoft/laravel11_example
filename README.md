@@ -1,23 +1,33 @@
 # Laravel 11 
 
+This project using Laravel 11, Vite, React, Tailwind CSS. 
+
+## Install Laravel 11: 
+
+How to to create a new project: 
+
 $ laravel new project-name
 
 $ composer require laravel/ui
 
+$ npm install 
 
-$ npm install && npm run build
+### To run the vite: 
 
+$ npm run dev
 
-## Run the server: 
+### To build the vite: 
+
+$ npm run build
+
+### To run the PHP server: 
 
 $ php artisan serve
 
 
-## For Production: 
+### Update vite.config.js: 
 
-$ npm run build
-
-## Need to update vite.config.js to add: 
+Need to update vite.config.js when adding the new React components, so it will work when being built.
 
 ````
 In export default defineConfig({
